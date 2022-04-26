@@ -25,4 +25,10 @@ public class Amazon_test_1 {
 		System.out.println("I am in test4");
 	}
 
+	@Test
+	public void test() {
+		System.out.println("I am in test5");
+	}
+	
+	
 }

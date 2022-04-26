@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="amazon-test" duration-ms="31" started-at="2022-04-26T12:50:19 IST" finished-at="2022-04-26T12:50:19 IST">
+  <suite started-at="2022-04-26T16:06:50 IST" name="amazon-test" finished-at="2022-04-26T16:06:50 IST" duration-ms="86">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31" started-at="2022-04-26T12:50:19 IST" finished-at="2022-04-26T12:50:19 IST">
+    <test started-at="2022-04-26T16:06:50 IST" name="Test" finished-at="2022-04-26T16:06:50 IST" duration-ms="86">
       <class name="tests.Amazon_test_1">
-        <test-method status="PASS" signature="test1()[pri:0, instance:tests.Amazon_test_1@9a7504c]" name="test1" duration-ms="4" started-at="2022-04-26T12:50:19 IST" finished-at="2022-04-26T12:50:19 IST">
+        <test-method signature="test()[pri:0, instance:tests.Amazon_test_1@66d3eec0]" started-at="2022-04-26T16:06:50 IST" name="test" finished-at="2022-04-26T16:06:50 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test1()[pri:0, instance:tests.Amazon_test_1@66d3eec0]" started-at="2022-04-26T16:06:50 IST" name="test1" finished-at="2022-04-26T16:06:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:tests.Amazon_test_1@9a7504c]" name="test2" duration-ms="1" started-at="2022-04-26T12:50:19 IST" finished-at="2022-04-26T12:50:19 IST">
+        <test-method signature="test2()[pri:0, instance:tests.Amazon_test_1@66d3eec0]" started-at="2022-04-26T16:06:50 IST" name="test2" finished-at="2022-04-26T16:06:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:tests.Amazon_test_1@9a7504c]" name="test3" duration-ms="0" started-at="2022-04-26T12:50:19 IST" finished-at="2022-04-26T12:50:19 IST">
+        <test-method signature="test3()[pri:0, instance:tests.Amazon_test_1@66d3eec0]" started-at="2022-04-26T16:06:50 IST" name="test3" finished-at="2022-04-26T16:06:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:tests.Amazon_test_1@66d3eec0]" started-at="2022-04-26T16:06:50 IST" name="test4" finished-at="2022-04-26T16:06:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
       </class> <!-- tests.Amazon_test_1 -->
     </test> <!-- Test -->
   </suite> <!-- amazon-test -->
