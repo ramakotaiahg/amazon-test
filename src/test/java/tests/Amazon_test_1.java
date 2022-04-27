@@ -1,38 +1,21 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Amazon_test_1 {
-	
-	
-	@Test
-	public void test1() {
-		System.out.println("I am in test1");
-	}
-	
-	@Test
-	public void test2() {
-		System.out.println("I am in test2");
-	}
-	
-	@Test
-	public void test3() {
-		System.out.println("I am in test3");
-	}
-	
-	@Test
-	public void test4() {
-		System.out.println("I am in test4");
-	}
+import base.BaseTest;
 
-	@Test
-	public void test5() {
-		System.out.println("I am in test5");
-	}
+public class Amazon_test_1 extends BaseTest{
+	
 	
 	@Test
-	public void test6() {
-		System.out.println("I am in test6");
+	public void amazon_HamePage_Title_Verification() {
+		System.out.println("Validating the amazon home page title");
+		String expected_title="Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in";
+		String actual_title=driver.getTitle();
+		Assert.assertEquals(expected_title, actual_title);
 	}
+	
+	
 	
 }
