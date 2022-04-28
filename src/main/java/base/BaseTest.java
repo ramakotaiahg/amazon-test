@@ -9,12 +9,13 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.Utilities;
 
-public class BaseTest {
+public class BaseTest extends Utilities {
 	
 	
-	String browser="chrome";
-	String ApplicationURL="https://www.amazon.in/";
+	String browser=read_propert_value("BROWSER");
+	String ApplicationURL=read_propert_value("URL");
 	public WebDriver driver;
 	
 	

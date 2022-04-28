@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-amazon_test">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-amazon_test" title="tests.Amazon_test_1" class="method navigator-link" hash-for-method="amazon_HamePage_Title_Verification">amazon_HamePage_Title_Verification</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-amazon_test" title="tests.Amazon_login_test" class="method navigator-link" hash-for-method="login_test(6305804194, Ramakotaiah@123)">login_test(6305804194, Ramakotaiah@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-amazon_test" title="tests.Amazon_login_test" class="method navigator-link" hash-for-method="login_test(6305804194, Ramakotaiah@123)">login_test(6305804194, Ramakotaiah@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-amazon_test -->
@@ -122,14 +127,23 @@
           <div class="suite-amazon_test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.Amazon_test_1</span>
+              <span class="class-name">tests.Amazon_login_test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="amazon_HamePage_Title_Verification">
-                  </a> <!-- amazon_HamePage_Title_Verification -->
-                  <span class="method-name">amazon_HamePage_Title_Verification</span>
+                  <a name="login_test(6305804194, Ramakotaiah@123)">
+                  </a> <!-- login_test(6305804194, Ramakotaiah@123) -->
+                  <span class="method-name">login_test</span>
+                  <span class="parameters">(6305804194, Ramakotaiah@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_test(6305804194, Ramakotaiah@123)">
+                  </a> <!-- login_test(6305804194, Ramakotaiah@123) -->
+                  <span class="method-name">login_test</span>
+                  <span class="parameters">(6305804194, Ramakotaiah@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,7 +160,7 @@
 &lt;suite name=&quot;amazon-test&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.Amazon_test_1&quot;/&gt;
+      &lt;class name=&quot;tests.Amazon_login_test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- amazon-test --&gt;
@@ -186,16 +200,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'amazon_HamePage_Title_Verification')
-data.setCell(0, 2, 'tests.Amazon_test_1')
-data.setCell(0, 3, 432);
+data.setCell(0, 1, 'login_test')
+data.setCell(0, 2, 'tests.Amazon_login_test')
+data.setCell(0, 3, 4816);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'login_test')
+data.setCell(1, 2, 'tests.Amazon_login_test')
+data.setCell(1, 3, 4489);
 window.suiteTableData['amazon_test']= { tableData: data, tableDiv: 'times-div-amazon_test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 432 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-amazon_test">
               </div> <!-- times-div-amazon_test -->
             </div> <!-- times-div -->
@@ -221,18 +239,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.Amazon_test_1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.Amazon_login_test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">amazon_HamePage_Title_Verification</span>
-                <span class="method-start">17580 ms</span>
+                <span class="method-name">login_test(6305804194, Ramakotaiah@123)</span>
+                <span class="method-start">8654 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18016 ms</span>
+                <span class="method-start">13473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">14240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_test(6305804194, Ramakotaiah@123)</span>
+                <span class="method-start">20661 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25151 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

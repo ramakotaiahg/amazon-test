@@ -3,7 +3,7 @@
 <suite name="amazon-test">
   <test name="Test">
     <classes>
-      <class name="tests.Amazon_test_1"/>
+      <class name="tests.Amazon_login_test"/>
     </classes>
   </test > <!-- Test -->
 </suite> <!-- amazon-test -->
