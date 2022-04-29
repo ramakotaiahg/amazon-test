@@ -16,6 +16,16 @@ public class Amazon_test_1 extends BaseTest{
 		Assert.assertEquals(expected_title, actual_title);
 	}
 	
+	@Test
+	public void test() {
+		System.out.println("i am in test");
+		
+	}
+		
+		@Test
+		public void test1() {
+			System.out.println("i am in test2");
+		}
+	}
 	
-	
-}
+

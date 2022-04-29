@@ -38,10 +38,9 @@ public class Amazon_login_test extends BaseTest{
 		//enter password
 		driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys(password);
 		
+
 		//click on sign in button
 		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
-		
-		
 		
 		
 		
