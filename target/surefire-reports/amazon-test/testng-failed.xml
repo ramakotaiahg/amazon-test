@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="login_test"/>
+          <include name="login_test" invocation-numbers="2"/>
         </methods>
       </class> <!-- tests.Amazon_login_test -->
     </classes>

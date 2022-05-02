@@ -16,7 +16,7 @@ public class BaseTest extends Utilities {
 	
 	String browser=read_propert_value("BROWSER");
 	String ApplicationURL=read_propert_value("URL");
-	public WebDriver driver;
+	public static WebDriver driver;
 	
 	
 	@BeforeMethod
