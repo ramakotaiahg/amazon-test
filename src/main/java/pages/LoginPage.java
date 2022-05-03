@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.Status;
+
 import base.BaseTest;
 
 public class LoginPage extends BaseTest{
@@ -32,6 +34,8 @@ public class LoginPage extends BaseTest{
 			String expected_title="Amazon Sign In";
 			String actual_title=driver.getTitle();
 			Assert.assertEquals(expected_title, actual_title);
+			report.log(Status.INFO, "Login Page Title: "+actual_title);
+			report.log(Status.PASS, "Login Page Title Validation Success");
 			
 			//enter email or ph number
 			email_TextBox.sendKeys(username);

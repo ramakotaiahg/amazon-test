@@ -17,7 +17,7 @@ import org.testng.annotations.DataProvider;
 
 public class Utilities {
 	
-	public String read_propert_value(String prop_name) {
+	public static String read_propert_value(String prop_name) {
 		String prop_value="";
 		try {
 			Properties prop=new Properties();

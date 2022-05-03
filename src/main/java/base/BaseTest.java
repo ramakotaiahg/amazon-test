@@ -9,18 +9,22 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.HomePage;
+import pages.LoginPage;
 import utilities.Utilities;
 
-public class BaseTest extends Utilities {
+public class BaseTest extends ObjectsRepo {
 	
 	
-	String browser=read_propert_value("BROWSER");
-	String ApplicationURL=read_propert_value("URL");
-	public static WebDriver driver;
+	String browser=Utilities.read_propert_value("BROWSER");
+	String ApplicationURL=Utilities.read_propert_value("URL");
+	
 	
 	
 	@BeforeMethod
 	public void setup() {
+		
+		
 		if(browser.contentEquals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
@@ -39,6 +43,11 @@ public class BaseTest extends Utilities {
 		driver.get(ApplicationURL);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		
+		
+		//Page Objects Initialization
+		home_page=new HomePage();
+		login_page=new LoginPage();
 	}
 	
 	@AfterMethod
