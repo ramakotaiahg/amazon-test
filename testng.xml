@@ -7,7 +7,8 @@
 </listeners>
   <test name="Test">
     <classes>
-      <class name="tests.Amazon_login_test"/>
+    <class name="tests.Amazon_login_test"/>
+      <class name="tests.Cart_test"/>
     </classes>
   </test > <!-- Test -->
 </suite> <!-- amazon-test -->

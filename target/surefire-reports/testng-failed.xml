@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [amazon-test]" guice-stage="DEVELOPMENT" verbose="0">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [amazon-test]">
   <listeners>
     <listener class-name="base.TestListeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)" verbose="0">
+  <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="tests.Amazon_login_test">
+      <class name="tests.Cart_test">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="login_test" invocation-numbers="2"/>
+          <include name="RemoveFromCart_Test" invocation-numbers="0"/>
+          <include name="product_Price_Validation" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.Amazon_login_test -->
+      </class> <!-- tests.Cart_test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [amazon-test] -->

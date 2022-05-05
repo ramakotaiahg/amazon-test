@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -15,6 +16,17 @@ public class HomePage extends BaseTest{
 	@FindBy(xpath="//div[@id='nav-flyout-ya-signin']//span[@class='nav-action-inner'][normalize-space()='Sign in']")
 	WebElement signIn_Button;
 	
+	@FindBy(xpath="//input[@id='twotabsearchtextbox']")
+	WebElement searchBox;
+	
+	@FindBy(xpath="//input[@id='nav-search-submit-button']")
+	WebElement searchSubmit_Button;
+	
+	@FindBy(xpath="//a[@id='nav-cart']")
+	WebElement goToCart_Link;
+	
+
+	
 	
 	public HomePage() {
 		PageFactory.initElements(driver,this);
@@ -29,7 +41,27 @@ public class HomePage extends BaseTest{
            action.moveToElement(accountList_Link).perform();
            //Click on login button
            signIn_Button.click();
+           logger.info("Click on signIn button");
   		   Thread.sleep(3);
 	}
+	
+	public void searchProduct(String productName) throws InterruptedException {
+		Thread.sleep(5);
+		searchBox.clear();
+		searchBox.sendKeys(productName);
+		searchSubmit_Button.click();
+		Thread.sleep(3);
+		
+	}
+	
+	public void goToCart() throws InterruptedException {
+		Thread.sleep(5);
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("arguments[0].click();", goToCart_Link);
+		//goToCart_Link.click();
+	}
+	
+	
+	
 
 }
